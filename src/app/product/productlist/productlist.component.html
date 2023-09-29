@@ -1,0 +1,54 @@
+<div class="card">
+    <div class="card-header">
+        Lista de productos
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">
+                Filtrar por:
+            </div>
+            <div class="col-md-4">
+                <input [(ngModel)]="listFilter" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Filtro: {{listFilter}}</h3>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table"*ngIf="productos.length">
+                <thead>
+                    <tr>
+                        <th><button (click)="showImage()" class= "btn btn-primary" type="button"
+                            >{{muestraImg?'Oculta ':'Muestra '}}Imagen</button></th>
+                        <th>Modelo</th>
+                        <th>Descripcion</th>
+                        <th>Año</th>
+                        <th>Precio</th>
+                        <th>Marca</th>
+                        <th>Color</th>
+                        <th>imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let producto of productos | productoFilter:listFilter">
+                        <td>{{producto.productoId}}</td>
+                        <td>{{producto.Modelo|uppercase}}</td>
+                        <td>{{producto.Descripcion}}</td>
+                        <td>{{producto.year| date}}</td>
+                        <td>{{producto.precio | currency}}</td>
+                        <td>{{producto.Marca}}</td>
+                        <td>{{producto.Color}}</td>
+                        <td>
+                            <img *ngIf="muestraImg" [src]="producto.ImagenUr1"
+                            [title]="producto.Modelo"
+                            [style.width.px]="imageWidth"
+                            [style.margin.px]="imageMargin">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

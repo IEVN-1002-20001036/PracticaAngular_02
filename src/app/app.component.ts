@@ -5,6 +5,16 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'PracticaAngular_02';
+
+export class AppComponent{
+  title='AngularEjemplo_02'
+   duplicarNumero(n:number):number{
+       return n+2;
+   }
+
+   pelicula={
+       titulo:'Cantinflas show',
+       fechadeLanzamiento:new Date(),
+       precio:1234
+   }
 }
