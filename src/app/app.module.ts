@@ -8,14 +8,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { TemperatureConverterComponent } from './temperature-converter/temperature-converter.component';
-import { MultiplicionComponent } from './multiplicion/multiplicion.component';
+
+import { MultiplicacionComponent } from './multiplicacion/multiplicacion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     TemperatureConverterComponent,
-    MultiplicionComponent, 
+    MultiplicacionComponent,
+    MultiplicacionComponent, 
   ],
   imports: [
     BrowserModule,

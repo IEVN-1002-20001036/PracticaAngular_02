@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-multiplicion',
-  templateUrl: './multiplicion.component.html',
-  styleUrls: ['./multiplicion.component.css']
+  selector: 'app-multiplicacion',
+  templateUrl: './multiplicacion.component.html',
+  styleUrls: ['./multiplicacion.component.css']
 })
-export class MultiplicionComponent {
+export class MultiplicacionComponent {
   numero1: number = 0;
   numero2: number = 0;
   resultado: number = 0;
@@ -32,3 +32,4 @@ export class MultiplicionComponent {
     }
   }
 }
+
