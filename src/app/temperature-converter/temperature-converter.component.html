@@ -1,0 +1,14 @@
+<p>temperature-converter works!</p>
+<div class="container">
+    <h1>Temperature Converter</h1>
+    <div class="input-container">
+      <label for="celsius">Celsius (°C):</label>
+      <input type="number" id="celsius" [(ngModel)]="celsius" placeholder="Celsius">
+      <button (click)="convert('celsius')">Convert</button>
+    </div>
+    <div class="result">
+      <p>Fahrenheit (°F): {{ fahrenheit }}</p>
+      <p>Kelvin (K): {{ kelvin }}</p>
+    </div>
+  </div>
+  

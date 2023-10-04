@@ -1,0 +1,11 @@
+.caja1{
+    border: solid #4050b5;
+}
+.caja2{
+    border: solid #4050b5;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

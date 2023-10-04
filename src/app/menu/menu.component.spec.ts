@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Suma2Component } from './suma2.component';
+import { MenuComponent } from './menu.component';
 
-describe('Suma2Component', () => {
-  let component: Suma2Component;
-  let fixture: ComponentFixture<Suma2Component>;
+describe('MenuComponent', () => {
+  let component: MenuComponent;
+  let fixture: ComponentFixture<MenuComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [Suma2Component]
+      declarations: [MenuComponent]
     });
-    fixture = TestBed.createComponent(Suma2Component);
+    fixture = TestBed.createComponent(MenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

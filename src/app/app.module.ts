@@ -1,32 +1,27 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductlistComponent } from './product/productlist/productlist.component';
-import { ProductListPipe } from './product-list.pipe';
-import { OperasBasComponent } from './formularios/operas-bas/operas-bas.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Suma2Component } from './formlularios/suma2/suma2.component';
+import { MaterialModule } from './material/material/material.module';
+import { MenuComponent } from './menu/menu.component';
+import { TemperatureConverterComponent } from './temperature-converter/temperature-converter.component';
+import { MultiplicionComponent } from './multiplicion/multiplicion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductlistComponent,
-    ProductListPipe,
-    OperasBasComponent,
-    Suma2Component
+    MenuComponent,
+    TemperatureConverterComponent,
+    MultiplicionComponent, 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatButtonModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

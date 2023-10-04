@@ -1,0 +1,24 @@
+<br><br>
+<div class="titulo"><h1>MULTIPLICACIÓN AxB</h1></div>
+<br><br>
+<br/>
+<div class="row">
+    <div class="col-6 caja1">
+        <div class="mb-3">
+            <label for="num1" class="form-label">Numero1</label>
+            <input type="text" class="form-control" name="num1" [(ngModel)]="numero1" placeholder="Numero1">
+        </div>
+        <div class="mb-3">
+            <label for="num2" class="form-label">Numero2</label>
+            <input type="text" class="form-control" name="num2" [(ngModel)]="numero2" placeholder="Numero2">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" (click)="calcularResultado()">Calcular</button>
+        </div>
+    </div>
+    <div class="col-6 caja2">
+        <h2>N1: {{numero1}}</h2>
+        <h2>N2: {{numero2}}</h2>
+        <h2>Operación: {{ operacion }}</h2>
+    </div>
+</div>
