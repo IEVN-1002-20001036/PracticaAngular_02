@@ -10,6 +10,7 @@ import { MenuComponent } from './menu/menu.component';
 import { TemperatureConverterComponent } from './temperature-converter/temperature-converter.component';
 
 import { MultiplicacionComponent } from './multiplicacion/multiplicacion.component';
+import { CinepolisComponent } from './cinepolis/cinepolis.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MultiplicacionComponent } from './multiplicacion/multiplicacion.compone
     MenuComponent,
     TemperatureConverterComponent,
     MultiplicacionComponent,
-    MultiplicacionComponent, 
+    MultiplicacionComponent,
+    CinepolisComponent, 
   ],
   imports: [
     BrowserModule,

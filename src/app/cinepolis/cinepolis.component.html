@@ -1,0 +1,57 @@
+
+<div class="container mt-3">
+    <div class="col-6 w-100 mt-3" >
+        <img src="../../assets/Logo.png" class="" id="image" alt="" width="80px">
+        
+            <p style="text-align:center; color: rgb(54, 74, 141);"><u><h1 style="font-family: 'Bebas Neue', sans-serif; font-size: 45px;">BIENVENIDOS A CINEPOLIS</h1></u></p>
+        
+      </div>
+
+    <div class="row"  >
+      
+        <div class="col-6 border  p-4 border-4">
+             
+                <label class="text-primary"  for="nombre">Nombre</label>
+                <input type="text" [(ngModel)]="nombreCompleto" name="Nombre" required class="form-control" placeholder="nombre" id="nombre">
+                
+                <label class="text-primary" for="nombre">Cantidad de compradores</label>
+                <input type="text" name="Nombre"  [(ngModel)]="cantidadCompradores" required class="form-control" placeholder="1" id="nombre">
+
+                <label class="text-primary">Tarjeta CINECO</label>
+                <br>
+                <label for="html">Si</label>
+                <input type="radio" [value]="0"  [(ngModel)]="isCineco" name="cineco" id="">
+                <span class="mx-2"></span>
+                <label for="html">No</label>
+                <input type="radio"   [(ngModel)]="isCineco" [value]="1" name="cineco" id="">
+                <br>
+                <label class="text-primary">Boletos</label>
+                <input type="number" [(ngModel)]="cantidadDeboletos" class="form-control" required placeholder="numero de boletos">
+                <button (click)="calcularPrecio()"  class="btn btn-primary mt-3">Enviar</button>
+            
+        </div>
+        
+        <div class="mr-4 pt-5  col-6 border border-4">
+            <b><h1 class="text-primary text-center">Vista previa</h1></b>
+            <h1 class="text-center">Nombre: {{nombreCompleto}} </h1>
+            <h1 class="text-center">Cantidad de compradores: {{cantidadCompradores}}</h1>
+            <h1 class="text-center">Boletos disponibles: {{boletosDisponibles}}</h1>
+            <h1 class="text-center">Miembro: {{(isCineco===0 ) ? 'Sí' : 'No'}}</h1>
+            <h1 class="text-center">Total: {{total}}</h1>
+             
+        </div>
+
+        <div class="mr-4  col-6 m-auto mt-3 text-center">
+            <h3>Si compras más de cinco boletas le dan un 15% de descuento, Si compras Tres, cuatro o cinco boletas obtendras un descuento
+                del 10%, Pero si compran solo 1 o dos no obtendran ningun descuento (Esto aplica solo con la tarjeta Cineco) </h3>
+            
+            <a class="btn btn-danger mx-3 block px-4">Salir </a>
+        </div>
+        <div class="col-6 w-100 mt-3" >
+            <p style="text-align:center">
+                <img src="../../assets/image001.jpg" class="" id="image" alt="  " width="">
+            </p>    
+        </div>
+    </div>
+
+</div>

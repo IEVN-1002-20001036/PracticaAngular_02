@@ -1,0 +1,5 @@
+
+body {
+    background-image:'.../.../assest/estrella.png';
+    background-size: cover; /* Esto ajustará la imagen para que cubra todo el fondo */
+}
